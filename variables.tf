@@ -24,12 +24,12 @@ variable "service_account_id" {
 
 variable "network_id" {
   type        = string
-  default     = "enpd0dea4jrld1pjhgq5"
+  default     = "enpqjp4vbiakmsksa9u7"
 }
 
 variable "subnet_a_id" {
   type        = string
-  default     = "e9b6ifd47itsftbi6lql"
+  default     = "e9bdm123jfqda6mtsqe0"
 }
 
 ### VMs
@@ -72,7 +72,7 @@ variable "vms_resources" {
 
 variable "vms_ssh_root_key" {
   type        = string
-  default     = "~/.ssh/yc-ansible.pub"
+  default     = "/root/.ssh/yc-ansible.pub"
 }
 
 variable "vm_os_family" {
