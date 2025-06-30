@@ -53,7 +53,7 @@ variable "vms_resources" {
     "control" = {
       name = "k8s-control-node"
       cores = 2
-      memory = 4
+      memory = 6
       core_fraction = 20
       disk_size = 10
       disk_type = "network-hdd"
