@@ -8,7 +8,7 @@ terraform {
     region = "ru-central1"
     key    = "infrastructure/terraform.tfstate"
     profile = "profile1"
-    shared_credentials_files = [ "~/.terraform_static_key" ]
+    shared_credentials_files = [ "/root/.terraform_static_key" ]
 
     skip_region_validation      = true
     skip_credentials_validation = true
@@ -28,5 +28,5 @@ provider "yandex" {
   cloud_id  = var.cloud_id
   folder_id = var.folder_id
   zone      = var.default_zone
-  service_account_key_file = file("~/.authorized_key_terraform.json")
+  service_account_key_file = file("/root/.authorized_key_terraform.json")
 }

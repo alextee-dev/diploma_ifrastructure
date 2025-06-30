@@ -1,5 +1,5 @@
 locals {
 
-key = file("~/.ssh/ycservice.pub")
+key = file("/root/.ssh/ycservice.pub")
 ubukey = "ubuntu:${local.key}"
     }
